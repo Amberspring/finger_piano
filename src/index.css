@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import "tailwindcss";
+@import "@fontsource/fusion-pixel-12px-proportional-sc";
+
+
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Comfortaa', cursive, sans-serif;
+}
+
+.font-bubbly {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-digital {
+  font-family: 'Fusion Pixel 12px Proportional SC', 'Silkscreen', 'DotGothic16', monospace;
+}
+
+/* Frutiger Aero Skeuomorphic Glass & Gloss */
+.aero-window {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(220, 245, 255, 0.2) 50%, rgba(180, 230, 255, 0.35) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 
+    0 20px 50px rgba(0, 70, 120, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    inset 0 -2px 4px rgba(0, 120, 200, 0.2);
+}
+
+.aero-glass-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(225, 245, 255, 0.35) 60%, rgba(190, 235, 255, 0.5) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 
+    0 10px 30px rgba(0, 80, 150, 0.15),
+    inset 0 2px 3px rgba(255, 255, 255, 0.95),
+    inset 0 -2px 4px rgba(0, 100, 180, 0.15);
+}
+
+.aero-btn {
+  background: linear-gradient(180deg, #ffffff 0%, #d4f0ff 45%, #70c4ff 50%, #46a6f5 100%);
+  border: 1px solid #7bc3ff;
+  box-shadow: 
+    0 4px 10px rgba(0, 120, 220, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9),
+    inset 0 -1px 2px rgba(0, 70, 160, 0.4);
+  transition: all 0.15s ease-out;
+}
+
+.aero-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 
+    0 6px 14px rgba(0, 140, 255, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 1);
+}
+
+.aero-btn:active {
+  transform: translateY(1px);
+  filter: brightness(0.95);
+  box-shadow: 
+    0 2px 4px rgba(0, 90, 180, 0.4),
+    inset 0 2px 4px rgba(0, 60, 140, 0.4);
+}
+
+.aero-btn-emerald {
+  background: linear-gradient(180deg, #ffffff 0%, #dcfce7 45%, #4ade80 50%, #16a34a 100%);
+  border: 1px solid #86efac;
+  box-shadow: 
+    0 4px 10px rgba(22, 163, 74, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9),
+    inset 0 -1px 2px rgba(21, 128, 61, 0.4);
+}
+
+.aero-btn-pink {
+  background: linear-gradient(180deg, #ffffff 0%, #fce7f3 45%, #f472b6 50%, #db2777 100%);
+  border: 1px solid #f9a8d4;
+  box-shadow: 
+    0 4px 10px rgba(219, 39, 119, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.9),
+    inset 0 -1px 2px rgba(157, 23, 77, 0.4);
+}
+
+/* Water Drop / Glossy Orb */
+.water-orb {
+  border-radius: 9999px;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.2) 30%, rgba(56, 189, 248, 0.6) 70%, rgba(14, 165, 233, 0.9) 100%);
+  box-shadow: 
+    0 8px 20px rgba(14, 165, 233, 0.4),
+    inset -4px -4px 8px rgba(3, 105, 161, 0.6),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.9);
+}
+
+/* CD / Holographic Rainbow Sheen */
+.cd-disc {
+  background: conic-gradient(
+    from 0deg,
+    #e2e8f0 0deg,
+    #bae6fd 60deg,
+    #fbcfe8 120deg,
+    #bbf7d0 180deg,
+    #fef08a 240deg,
+    #bae6fd 300deg,
+    #e2e8f0 360deg
+  );
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), inset 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Y2K Dot Pattern Background */
+.y2k-dots {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.2) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.y2k-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+@keyframes rippleEffect {
+  0% { transform: scale(0.6); opacity: 1; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: rippleEffect 0.8s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
+}
+
+/* Chrome metal effect */
+.chrome-text {
+  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 40%, #9ca3af 50%, #4b5563 80%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Aqua Jelly status pill */
+.aqua-pill {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(186, 230, 253, 0.6) 50%, rgba(56, 189, 248, 0.8) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25), inset 0 1px 2px #fff;
+}
+

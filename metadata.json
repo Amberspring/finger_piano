@@ -1,0 +1,6 @@
+{
+  "name": "Finger Touch Piano",
+  "description": "Interactive webcam gesture instrument and touch card in Y2K Frutiger Aero aesthetic. Turn your fingers into musical instruments, robot voice typers, and birthday greeting cards via thumb-to-finger pinches.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
